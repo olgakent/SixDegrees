@@ -18,7 +18,7 @@ The user also has the ability to create a new campaign. The page they are direct
 
 ***
 
-<p align="center"><img src="./login.png" alt="login page screenshot" width=50%> 
+<p align="center"><img src="./login.png" alt="login page screenshot" width=50%></p>
 <p align="center"><img src="./createcampaign.png" alt="create campaign screenshot" width=50%></p>
 <p align="center"><img src="./campaignreport.png" alt="campaign report screenshot" width=100%></p>
 
