@@ -25,7 +25,7 @@ The user also has the ability to create a new campaign. The page they are direct
 
 ### Team Members
 **DanDan Lin**  
-CUNY Hunter College 
+CUNY Hunter College
 dandanlin.l@gmail.com  
 https://github.com/Dandanlin0702
 
