@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/main.css" />
 		
 		<script type="text/javascript">
-      <?php include "db.php" ?>
+
   function checkForm(form)
   {
     if(form.username.value == "") {
@@ -81,11 +81,11 @@
 							<form id="contact_form" action="#" method="POST" enctype="multipart/form-data" onsubmit="return checkForm(this);">
 								<div class="row">
 									<label for="username">Username:</label><br />
-									<input id="username_id" class="input" name="username_name" type="text" value="" size="30" /><br />
+									<input id="username" class="input" name="username" type="text" value="" size="30" /><br />
 								</div>
 								<div class="row">
 									<label for="password">Password:</label><br />
-									<input id="password_id" class="input" name="password_name" type="password" value="" size="30" /><br />
+									<input id="password" class="input" name="password1" type="password" value="" size="30" /><br />
 								</div>
 								<div class="row">
 									<label for="password">Confirm password:</label><br />
@@ -94,16 +94,6 @@
 								<input id="submit_button" type="submit" value="Create" />
 							</form>					
 						</header>
-            <?php $username1 = isset ($_POST["username_name"]) ? $_POST["username_name"] :  "" ;
-            $password1 = isset ($_POST["password_name"]) ? $_POST["password_name"] : "" ;
-            $query = "INSERT INTO UserInfo (`username`, `password`, `email`) VALUES ('$username1', '$password1', 'email@email.com')";
-            
-
-            $result = mysqli_query($conn, $query);
-            
-            /*while($row = mysql_fetch_array($result, MYSQL_NUM)) {
-              echo $row;
-            }  */    ?>
 			</div>
 
 		<!-- Scripts -->

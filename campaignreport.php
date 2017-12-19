@@ -27,7 +27,7 @@
 						<h1>Share Your Campaign!</h1>
             <p>Sharing your campaign on social media is the best way to get to the 6th Degree! Connect witd your friends to spread awareness, collect funds, and find volunteers!</p>
             <p>Click the platform to share your campaign on!</p>
-            <a href="https://twitter.com/home?status=Check%20out%20my%206%20Degrees%20Campaign!%20Share,%20donate,%20and%20volunteer%20to%20help%20me%20reach%20the%206th%20Degree!%20#6DegreesRocks">
+            <a href="https://twitter.com/home?status=Check%20out%20my%206%20Degrees%20Campaign!%20Share,%20donate,%20and%20volunteer%20to%20help%20me%20reach%20tde%206td%20Degree!%20#6DegreesRocks">
             <img src= "images/twitter.png" alt= "Twitter" width= "50" height="50">
             </a>
             <a href="https://instagram.com/home?status">

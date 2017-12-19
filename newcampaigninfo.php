@@ -13,7 +13,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
-		<?php include "db.php" ?>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -36,18 +35,9 @@
                   Time Frame <br>
                   End Date: <br>
                   <input type= "text" name= "endDate"> <br><br>
-                  <?php 
-            $name = isset ($_POST["name"]) ? $_POST["name"] :  "" ;
-            $charity = isset ($_POST["charity"]) ? $_POST["charity"] : "" ;
-            $descr = isset ($_POST["description"]) ? $_POST["description"] : "" ;
-            $hashtag = isset ($_POST["hastag"]) ? $_POST["hashtag"] : "" ;
-            $endDate = isset ($_POST["endDate"]) ? $_POST["endDate"] : "" ;
-            $query = "INSERT INTO campaigndetail (`campaign_name`, `organization`, `campaign_info', 'campaign_hashtag', 'campaign_degree') VALUES ('$name', '$charity', '$descr', '$hashtag', 1)";
-
-            mysqli_query($conn, $query); ?>
                   
               </form>
-              <input id="submit_button" type="submit" value="Next" onclick= "window.location.href= 'newCampaignChallenges.php'">
+              <input id="submit_button" type="submit" value="Next" onclick= "window.location.href= 'newCampaignChallenges.html'">
 						</header>
 			</div>
       </div>

@@ -13,7 +13,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
-    <?php include "db.php"; ?>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -26,7 +25,7 @@
 						<h1>Create Campaign Challenges</h1>
 							<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
                   Challenge 1: <br>
-                    <form method="POST" id="challenge_form" action="#" enctype="multipart/form-data">
+                    <form>
                       <select name= "options">
                         <option value= "share">Share</option>
                         <option value= "donate">Donate</option>
@@ -35,16 +34,8 @@
                       </select>
                         <br>
                       <form>
-                        <input type= "text" name= "descr"> <br>
                         Enter the quantity (for Share please enter "None", for Donate please enter the amount, for Volunteer please enter the number of hours)
                         <input type= "text" name= "quant"> <br>
-                        <?php 
-            $type = isset ($_POST["options"]) ? $_POST["options"] :  "" ;
-            $descr = isset ($_POST["descr"]) ? $_POST["descr"] : "" ;
-            $quant = isset ($_POST["quant"]) ? $_POST["quant"] : "" ;
-            $query = "INSERT INTO challengestatus (`challenge_type`, `challenge_info`, `quantity`) VALUES ('$type', '$descr', 'quant')";
-
-            mysqli_query($conn, $query); ?>
                         <br><br>
                   Challenge 2: <br>
                    <form>
@@ -56,7 +47,6 @@
                       </select>
                         <br>
                       <form>
-                        <input type= "text" name= "descr"> <br>
                         Enter the quantity (for Share please enter "None", for Donate please enter the amount, for Volunteer please enter the number of hours)
                         <input type= "text" name= "quant"> <br>
                         <br><br>
@@ -112,7 +102,6 @@
                         Enter the quantity (for Share please enter "None", for Donate please enter the amount, for Volunteer please enter the number of hours)
                         <input type= "text" name= "quant"> <br>
                         <input type="submit">
-                        <!-- redirect to dashboard here -->
                         <br><br>
               </form>
 						</header>

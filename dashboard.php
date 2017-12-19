@@ -13,45 +13,90 @@
 	</head>
 	<body class="is-loading">
 		<!-- Wrapper -->
-
+		
 			<div style = "width: 100%">
 				<!-- Active challenges -->
 				<section id="main">
 						<h1>Dashboard</h1>
 		</div>
 		<!-- Wrapper -->
-
-			<div style = "float: left; width: 700px">
+			<div style = "float: left; width: 600px">
 			<div id="wrapper">
 				<!-- Active challenges -->
 				<section id="main">
 						<h1>Active challenges</h1>
-						<table width = "500px" align = "center" style = "padding: 20px; border: 1px solid grey">
+						<table width = "400px" align = "center" style = "padding: 20px; border: 1px solid grey">
 							<tr>
 								<td><u>Campaign Name</u></td>
 								<td><u>Challenge Number</u></td>
 								<td><u>Expiration</u></td>
-                                <td></td>
+								<td></td>
 							</tr>
-							<?php
-								include "db.php";
-								session_start();
-								$username = $_SESSION["username"];
-       							 $query = 'SELECT distinct campaigndetail.campaign_name, challengestatus.challenge_id, campaigndetail.expiration FROM campaigndetail, challengestatus'; /* user specific query to be added*/
-       							 $results = mysqli_query($conn, $query); ?>
-        						<?php while ($row = mysqli_fetch_array($results, MYSQLI_NUM )): ?>
-        						<tr>
-        							<td><?php echo $row[0]; ?></td>
-        							<td><?php echo $row[1]; ?></td>
-        							<td><?php echo $row[2]; ?></td>
-        						</tr>
-        					<?php endwhile; ?>
-
+							<tr>
+								<td>Campaign 1</td>
+								<td>6</td>
+								<td>Nov 1 @ 12:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 2</td>
+								<td>2</td>
+								<td>Dec 2 @ 1:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 3</td>
+								<td>4</td>
+								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 4</td>
+								<td>1</td>
+								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 5</td>
+								<td>3</td>
+								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 6</td>
+								<td>5</td>
+								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 1</td>
+								<td>7</td>
+								<td>Nov 1 @ 12:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 2</td>
+								<td>8</td>
+								<td>Dec 2 @ 1:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 3</td>
+								<td>9</td>
+								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							<tr>
+								<td>Campaign 4</td>
+								<td>10</td>
+								<td>Dec 6 @ 3:00PM</td>
+								<td><input id="submit_button" type="submit" value="Done" /></td>
+							</tr>
+							
 						</table>
-
 			</div>
 		</div>
-
+		
 			<div style = "float: right; width: 650px; padding-right: 50px">
 			<div id="wrapper" style = "padding: 20px" position = "fixed">
 				<!-- invites -->
@@ -80,24 +125,25 @@
 			<div id="wrapper">
 				<!-- invites -->
 				<section id="main">
-					<p style = "font-size: 40px; position:fixed" ><a href = "./newcampaigninfo.php" >+</a></p>
+						<p style = "font-size: 40px; position:fixed" ><a href = "./newcampaigninfo.html" >+</a></p>
 						<h1>Campaigns</h1>
 						<table width = "450px" style = "padding: 20px; border: 1px solid grey">
 							<tr>
 								<td><u>Campaign</u></td>
 								<td><u>Organization</u></td>
-								<td><u></u></td>
+								<td></td>
 							</tr>
-							<?php
-								include "db.php";
-       							 $query = 'SELECT campaigndetail.campaign_name, campaigndetail.organization FROM campaigndetail';
-       							 $results = mysqli_query($conn, $query); ?>
-        						<?php while ($row = mysqli_fetch_array($results, MYSQLI_NUM )): ?>
-        						<tr>
-        							<td><a href="./campaignreport.php"><?php echo $row[0]; ?></a></td>
-        							<td><?php echo $row[1]; ?></td>
-        						</tr>
-        					<?php endwhile; ?>
+							<tr>
+								<td>My Campaign</td>
+								<td>IJM</td>
+								<td><input id="submit_button" type="submit" value="View" /></td>
+							</tr>
+							<tr>
+								<td>My Campaign</td>
+								<td>Humaine Society</td>
+								<td><input id="submit_button" type="submit" value="View" /></td>
+							</tr>
+							
 						</table>
 			</div>
 		</div>
