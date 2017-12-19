@@ -24,10 +24,7 @@ The user also has the ability to create a new campaign. The page they are direct
 <p align="center"><img src="./socialsharing.png" alt="social sharing screenshot" width=100%></p>
 
 ### Team Members
-**DanDan Lin**  
-CUNY Hunter College
-https://github.com/Dandanlin0702
+[DanDan Lin](https://github.com/Dandanlin0702)
 
-**Olga Kent**  
-CUNY Hunter College   
-https://github.com/olgakent  
+[Olga Kent](https://github.com/olgakent)
+
